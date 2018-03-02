@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "app.gella.com.myapplicationpresenter"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file("../vidaa_signature_tool/launcher.jks")
+            storePassword '123456'
+            keyAlias 'launcher'
+            keyPassword '123456'
+        }
+        debug {
+            storeFile file("../vidaa_signature_tool/launcher.jks")
+            storePassword '123456'
+            keyAlias 'launcher'
+            keyPassword '123456'
+        }
+        emulator {
+            storeFile file("../vidaa_signature_tool/launcher.jks")
+            storePassword '123456'
+            keyAlias 'launcher'
+            keyPassword '123456'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:leanback-v17:23.4.0'
+    compile project(':looprecycleview');
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

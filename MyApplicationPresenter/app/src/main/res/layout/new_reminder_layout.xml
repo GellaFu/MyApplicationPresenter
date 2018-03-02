@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/reminder_item"
+    android:background="@color/lb_playback_controls_background_dark"
+    android:layout_width="102dp"
+    android:layout_height="160dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginBottom="30dp"
+    android:layout_marginRight="30dp"
+    android:focusable="true">
+    <TextView
+        android:id="@+id/text_lable"
+        android:gravity="bottom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

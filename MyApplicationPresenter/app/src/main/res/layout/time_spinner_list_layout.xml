@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+    <android.support.v17.leanback.widget.VerticalGridView
+        android:id="@+id/hour_list_view"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        >
+    </android.support.v17.leanback.widget.VerticalGridView>
+    <android.support.v17.leanback.widget.VerticalGridView
+        android:id="@+id/minute_list_view"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        >
+    </android.support.v17.leanback.widget.VerticalGridView>
+    <android.support.v17.leanback.widget.VerticalGridView
+        android:id="@+id/am_pm_list_view"
+        android:layout_width="40dp"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        >
+    </android.support.v17.leanback.widget.VerticalGridView>
+
+</LinearLayout>

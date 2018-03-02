@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v17.leanback.widget.HorizontalGridView
+        android:id="@+id/calendar_list"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        >
+    </android.support.v17.leanback.widget.HorizontalGridView>
+
+    <android.support.v17.leanback.widget.HorizontalGridView
+        android:id="@+id/reminder_list"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        >
+    </android.support.v17.leanback.widget.HorizontalGridView>
+
+</LinearLayout>

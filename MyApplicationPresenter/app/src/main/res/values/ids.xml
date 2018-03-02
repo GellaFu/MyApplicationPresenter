@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="horizontal_grid_view_tag_last_pos" type="id" />
+    <item name="horizontal_grid_view_tag_direction" type="id" />
+
+</resources>
